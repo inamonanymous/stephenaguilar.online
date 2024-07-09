@@ -1,0 +1,22 @@
+<section id="contact">
+    <div>
+        <div class="text-con">
+            <h3 class="heading">CONTACT</h3>           
+            <p>
+                Feel free to leave a message for me here, and I will promptly respond to your email.
+            </p>
+        </div>
+        <div class="image-con separator">
+            <img src="static/img/separator.png"/> 
+        </div>
+        <div class="form-con">
+            <form action="/send_message" method="post">
+                <input type="text" name="name"  placeholder="ENTER YOUR NAME*">
+                <input type="text" name="email" placeholder="ENTER YOUR EMAIL*" onchange="enableButton(this.value)">
+                <input type="text" name="phone" placeholder="ENTER YOUR PHONE NUMBER*">
+                <textarea name="message" placeholder="YOUR MESSAGE*"></textarea>
+                <button class="alt-3" id="submitBtn">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+</section>
